@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>EV Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:#f4f7fc;
+font-family:Arial;
+}
+
+/* Navbar */
+
+.navbar{
+background:linear-gradient(90deg,#1e2a78,#2f6fed);
+}
+
+.navbar-brand{
+font-weight:bold;
+font-size:22px;
+}
+
+.nav-link{
+color:white !important;
+margin-left:15px;
+}
+
+.nav-link:hover{
+color:#ffd700 !important;
+}
+
+/* Dashboard Section */
+
+.dashboard-section{
+padding:50px 0;
+}
+
+.dashboard-title{
+font-weight:bold;
+color:#1e2a78;
+margin-bottom:10px;
+}
+
+/* Cards */
+
+.analytics-card{
+background:white;
+border:none;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+padding:20px;
+text-align:center;
+transition:0.3s;
+}
+
+.analytics-card:hover{
+transform:translateY(-6px);
+}
+
+/* Tableau Container */
+
+.tableau-container{
+margin-top:40px;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+max-width:1200px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* Center Dashboard */
+
+.tableau-center{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand" href="/">EV India Analytics</a>
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+<li class="nav-item"><a class="nav-link active" href="/dashboard">Dashboard</a></li>
+<li class="nav-item"><a class="nav-link" href="/story">Story</a></li>
+
+</ul>
+
+</div>
+</nav>
+
+
+<!-- Dashboard Section -->
+
+<div class="container dashboard-section">
+
+<div class="text-center mb-5">
+
+<h2 class="dashboard-title">Electric Vehicle Analytics Dashboard</h2>
+
+<p class="lead">
+This dashboard provides interactive insights into India's electric vehicle market, including EV adoption trends, vehicle performance comparison, and charging infrastructure distribution.
+</p>
+
+</div>
+
+
+<!-- Analytics Cards -->
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="analytics-card">
+<h5>Total EV Vehicles</h5>
+<p>Analyze the number of electric vehicles available across different brands.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="analytics-card">
+<h5>Battery Capacity</h5>
+<p>Compare battery performance and range efficiency across EV models.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="analytics-card">
+<h5>Charging Stations</h5>
+<p>Explore charging infrastructure distribution across India.</p>
+</div>
+</div>
+
+</div>
+
+
+<!-- Tableau Dashboard -->
+
+<div class="tableau-container">
+
+<h4 class="text-center mb-4">Tableau Dashboard</h4>
+
+<div class="tableau-center">
+
+<div class='tableauPlaceholder' id='viz1772815885146' style='position: relative'>
+
+<noscript>
+<a href='#'>
+<img alt=' '
+src='https://public.tableau.com/static/images/El/ElectricalCarAnalysisinindia/Dashboard1/1_rss.png'
+style='border: none' />
+</a>
+</noscript>
+
+<object class='tableauViz' style='display:none;'>
+
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='site_root' value='' />
+<param name='name' value='ElectricalCarAnalysisinindia/Dashboard1' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+
+<param name='static_image'
+value='https://public.tableau.com/static/images/El/ElectricalCarAnalysisinindia/Dashboard1/1.png' />
+
+<param name='animate_transition' value='yes' />
+<param name='display_static_image' value='yes' />
+<param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' />
+<param name='display_count' value='yes' />
+<param name='language' value='en-US' />
+
+</object>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script type='text/javascript'>
+
+var divElement = document.getElementById('viz1772815885146');
+var vizElement = divElement.getElementsByTagName('object')[0];
+
+vizElement.style.width='1100px';
+vizElement.style.height='700px';
+
+var scriptElement = document.createElement('script');
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>EV Story</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:#f4f7fc;
+font-family:Arial;
+}
+
+/* Navbar */
+
+.navbar{
+background:linear-gradient(90deg,#1e2a78,#2f6fed);
+}
+
+.navbar-brand{
+font-weight:bold;
+font-size:22px;
+}
+
+.nav-link{
+color:white !important;
+margin-left:15px;
+}
+
+.nav-link:hover{
+color:#ffd700 !important;
+}
+
+/* Story Section */
+
+.story-section{
+padding:50px 0;
+}
+
+.story-title{
+font-weight:bold;
+color:#1e2a78;
+margin-bottom:15px;
+}
+
+/* Insight Cards */
+
+.insight-card{
+background:white;
+border-radius:10px;
+padding:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.insight-card:hover{
+transform:translateY(-5px);
+}
+
+/* Tableau container */
+
+.tableau-container{
+margin-top:40px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand" href="/">EV India Analytics</a>
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+<li class="nav-item"><a class="nav-link active" href="/story">Story</a></li>
+
+</ul>
+
+</div>
+</nav>
+
+
+<!-- Story Section -->
+
+<div class="container story-section">
+
+<div class="text-center mb-5">
+
+<h2 class="story-title">Electric Vehicle Data Story</h2>
+
+<p class="lead">
+This data story highlights key insights about the electric vehicle ecosystem in India.
+Through interactive visualizations, we explore EV growth trends, vehicle performance,
+and infrastructure development.
+</p>
+
+</div>
+
+
+<!-- Insights -->
+
+
+
+<!-- Tableau Story -->
+
+<div class="tableau-container">
+
+<h4 class="text-center mb-4">Interactive Tableau Story</h4>
+
+
+<div class='tableauPlaceholder' id='viz1772813635526' style='position: relative'>
+<noscript>
+<a href='#'>
+<img alt='Story 1 ' src='https://public.tableau.com/static/images/El/ElectricalCarAnalysisinindia/Story1/1_rss.png' style='border: none' />
+</a>
+</noscript>
+
+<object class='tableauViz' style='display:none;'>
+
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='site_root' value='' />
+<param name='name' value='ElectricalCarAnalysisinindia/Story1' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+<param name='static_image' value='https://public.tableau.com/static/images/El/ElectricalCarAnalysisinindia/Story1/1.png' />
+<param name='animate_transition' value='yes' />
+<param name='display_static_image' value='yes' />
+<param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' />
+<param name='display_count' value='yes' />
+<param name='language' value='en-US' />
+<param name='filter' value='publish=yes' />
+
+</object>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script type='text/javascript'>
+
+var divElement = document.getElementById('viz1772813635526');
+var vizElement = divElement.getElementsByTagName('object')[0];
+
+vizElement.style.width='100%';
+vizElement.style.height='850px';
+
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+</script>
+
+
+<!-- Simple Footer -->
+
+<footer style="background:#2f6fed;color:white;padding:15px;text-align:center;margin-top:40px;">
+
+© 2026 Electric Vehicle Analysis in India | Data Analytics Project
+
+</footer>
+
+</body>
+</html>
